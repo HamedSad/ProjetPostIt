@@ -5,7 +5,6 @@ public class Pen {
 	
 	
 	
-	
 	public String getGenrePen() {
 		return genrePen;
 	}

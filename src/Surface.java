@@ -12,22 +12,21 @@ public class Surface {
 		papier.collant = false;
 		papier.forme = "coeur ";
 		papier.tailleCm = 10 ;
-		
-		
 		papier.cont.natureContenu = "dessin";
 		papier.setCouleur("orange ");
 		
-		papier2.cont.pencil.genrePen = "stylographe ";
-		papier2.cont.pencil.setGenrePen("crayon ");
-		
-		
-		
-		System.out.println("Un PostIt " + papier.couleur + "en forme de "+
-		papier.forme + "de " + papier.tailleCm + "cm " + "pour du " + 
-		papier.cont.natureContenu);
-		
+		System.out.println("Un PostIt " + papier.couleur + "en forme de "+ papier.forme + "de " + papier.tailleCm + "cm pour du " + papier.cont.natureContenu);
 		System.out.println(papier.couleur);
-		System.out.println(papier2.cont.pencil.genrePen);
+		
+		papier2.setCouleur("vert ");
+		papier2.cont.pencil.setGenrePen("stylographe ");
+		papier2.setForme("triangle ");
+		papier2.setTailleCm(25);
+		papier2.cont.setNatureContenu("notes personnelles ");
+		
+		
+		
+		System.out.println("Un PostIt " + papier2.couleur + "en forme de " + papier2.forme + "de " + papier2.tailleCm + "cm pour des " + papier.cont.natureContenu + " avec un " + papier2.cont.pencil.genrePen);
 	}
 
 }
