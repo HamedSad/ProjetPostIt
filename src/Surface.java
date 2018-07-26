@@ -26,7 +26,8 @@ public class Surface {
 		
 		
 		
-		System.out.println("Un PostIt " + papier2.couleur + "en forme de " + papier2.forme + "de " + papier2.tailleCm + "cm pour des " + papier.cont.natureContenu + " avec un " + papier2.cont.pencil.genrePen);
+		System.out.println("Un PostIt " + papier2.getCouleur() + "en forme de " + papier2.getForme() + "de " + papier2.getTailleCm() 
+		+ "cm pour du " + papier.cont.getNatureContenu() + " avec un " + papier2.cont.pencil.getGenrePen());
 	}
 
 }
